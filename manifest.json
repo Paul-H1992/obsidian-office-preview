@@ -1,0 +1,11 @@
+{
+  "id": "office-preview",
+  "name": "Office Preview",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Preview Word, Excel, and PowerPoint files locally in Obsidian",
+  "author": "CodeFather",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}
