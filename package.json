@@ -1,31 +1,22 @@
 {
   "name": "obsidian-office-preview",
-  "version": "1.0.0",
-  "description": "Preview Word, Excel, PowerPoint files in Obsidian",
+  "version": "1.4.0",
+  "description": "Preview PPTX files directly in Obsidian",
   "main": "main.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch"
-  },
-  "keywords": [
-    "obsidian",
-    "plugin",
-    "office",
-    "preview",
-    "docx",
-    "xlsx",
-    "pptx"
-  ],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.19.39",
-    "typescript": "^5.9.3"
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs"
   },
   "dependencies": {
-    "mammoth": "^1.12.0",
-    "obsidian": "^1.12.3",
-    "xlsx": "^0.18.5"
+    "chart.js": "^4.5.1",
+    "jszip": "^3.10.1",
+    "pptxviewjs": "^1.1.9"
   },
-  "type": "commonjs"
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "builtin-modules": "^5.1.0",
+    "esbuild": "^0.23.0",
+    "obsidian": "latest",
+    "typescript": "^5.5.0"
+  }
 }
